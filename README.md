@@ -1,4 +1,4 @@
-# React D3 Tree <!-- omit in toc -->
+# React Hierarchy Tree Graph <!-- omit in toc -->
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/bkrem/react-d3-tree.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/bkrem/react-d3-tree.svg?branch=master)](https://travis-ci.org/bkrem/react-d3-tree)
@@ -7,7 +7,7 @@
 [![npm version](https://badge.fury.io/js/react-d3-tree.svg)](https://badge.fury.io/js/react-d3-tree)
 [![npm](https://img.shields.io/npm/dm/react-d3-tree.svg)](https://www.npmjs.com/package/react-d3-tree)
 
-React D3 Tree is a [React](http://facebook.github.io/react/) component that lets you represent hierarchical data (e.g. ancestor trees, organisational structure, package dependencies) as an animated & interactive tree graph by leveraging [D3](https://d3js.org/)'s `tree` layout.
+React Hierarchy Tree Graph is a [React](http://facebook.github.io/react/) component that lets you represent hierarchical data (e.g. ancestor trees, organisational structure, package dependencies) as an animated & interactive tree graph by leveraging [D3](https://d3js.org/)'s `tree` layout.
 
 
 ## Contents <!-- omit in toc -->
