@@ -37,17 +37,13 @@ React Hierarchy Tree Graph is a [React](http://facebook.github.io/react/) compon
 
 ## Installation
 ```bash
-yarn add react-d3-tree
-```
-or
-```bash
-npm i --save react-d3-tree
+npm i react-hierarchy-tree-graph
 ```
 
 ## Usage
 ```jsx
 import React from 'react';
-import Tree from 'react-d3-tree';
+import Tree from 'react-hierarchy-tree-graph';
 
 const myTreeData = [
   {
@@ -158,7 +154,7 @@ This is to prevent breaking the legacy usage of `circleRadius` + styling via `no
 The usage example above can be extended to include individual `shapeProps`:
 ```jsx
 import React from 'react';
-import Tree from 'react-d3-tree';
+import Tree from 'react-hierarchy-tree-graph';
 
 const myTreeData = [
   {
@@ -285,7 +281,7 @@ Clarifications:
 
 
 ## Keeping large trees responsive
-Attempting to render large trees with animated transitions may cause significant input lag. This is due to limitations related to the way D3's `select().transition()` enqueues calls to `requestAnimationFrame`, discussed [here](https://github.com/bkrem/react-d3-tree/issues/41#issuecomment-338425414).
+Attempting to render large trees with animated transitions may cause significant input lag. This is due to limitations related to the way D3's `select().transition()` enqueues calls to `requestAnimationFrame`, discussed [here](https://github.com/bkrem/react-hierarchy-tree-graph/issues/41#issuecomment-338425414).
 
 Until a custom debounce for expand/collapse has been implemented, **it is therefore recommended to set `props.transitionDuration` to `0` for large tree graphs** if you're experiencing responsiveness issues.
 
@@ -297,7 +293,7 @@ Statically hosted JSON or CSV files can be used as data sources via the addition
 
 ```jsx
 import React from 'react';
-import { Tree, treeUtil } from 'react-d3-tree';
+import { Tree, treeUtil } from 'react-hierarchy-tree-graph';
 
 const csvSource = 'https://raw.githubusercontent.com/bkrem/react-d3-tree/master/docs/examples/data/csv-example.csv';
 
