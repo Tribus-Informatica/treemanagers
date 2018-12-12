@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/bkrem/react-d3-tree/badge.svg?branch=master)](https://coveralls.io/github/bkrem/react-d3-tree?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f9ed4796ee9c448dbcd80af2954cc0d1)](https://www.codacy.com/app/ben.kremer/react-d3-tree?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bkrem/react-d3-tree&amp;utm_campaign=Badge_Grade)
 [![npm version](https://badge.fury.io/js/react-d3-tree.svg)](https://badge.fury.io/js/react-d3-tree)
-[![npm](https://img.shields.io/npm/dm/react-d3-tree.svg)](https://www.npmjs.com/package/react-d3-tree)
+[![npm](https://img.shields.io/npm/dm/react-d3-tree.svg)](https://www.npmjs.com/package/react-hierarchy-tree-graph)
 
 React Hierarchy Tree Graph is a [React](http://facebook.github.io/react/) component that lets you represent hierarchical data (e.g. ancestor trees, organisational structure, package dependencies) as an animated & interactive tree graph by leveraging [D3](https://d3js.org/)'s `tree` layout.
 
@@ -233,7 +233,7 @@ For more information on the SVG `style` attribute, [check this out](https://deve
 
 ## Pre-defining a node's `_collapsed` state
 The tree's initial layout can be specified node-for-node by enabling the `useCollapseData` prop.
-If activated, `react-d3-tree` will look for nodes specifying their own `_collapsed` property and structure the initial layout accordingly.
+If activated, `react-hierarchy-tree-graph` will look for nodes specifying their own `_collapsed` property and structure the initial layout accordingly.
 
 For example, given an input data set of the shape:
 ```js
@@ -275,7 +275,7 @@ Clarifications:
 * Why is a leading underscore required for `_collapsed`?
   * D3 binds its own internal `collapsed` property to each node, `react-d3-tree` simply adds a leading underscore to create a separate namespace.
 * Should `_collapsed: false` be explicitly set?
-  * No, there's no need to do this since `react-d3-tree` assumes a node to be expanded unless specified otherwise.
+  * No, there's no need to do this since `react-hierarchy-tree-graph` assumes a node to be expanded unless specified otherwise.
 
 > **Note:** `props.useCollapseData` and `props.initialDepth` are mutually exclusive. If `useCollapseData` is set, `initialDepth` values will be ignored.
 
