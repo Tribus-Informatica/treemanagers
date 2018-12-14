@@ -442,7 +442,7 @@ export default class Tree extends React.Component {
           >
             {links.map(linkData => (
               <Link
-                key={linkData.id}
+                key={uuid.v4()}
                 orientation={orientation}
                 pathFunc={pathFunc}
                 linkData={linkData}
@@ -453,7 +453,7 @@ export default class Tree extends React.Component {
 
             {nodes.map(nodeData => (
               <Node
-                key={nodeData.id}
+                key={uuid.v4()}
                 nodeSvgShape={{ ...nodeSvgShape, ...nodeData.nodeSvgShape }}
                 nodeLabelComponent={nodeLabelComponent}
                 nodeSize={nodeSize}
