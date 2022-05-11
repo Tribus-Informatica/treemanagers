@@ -433,7 +433,7 @@ export default class Tree extends React.Component {
 
     return (
       <div className={`rd3t-tree-container ${zoomable ? 'rd3t-grabbable' : undefined}`}>
-        <svg className={rd3tSvgClassName} width="100%" height="100%">
+        <svg className={rd3tSvgClassName} width="100%" height="1000">
           <NodeWrapper
             transitionDuration={transitionDuration}
             component="g"
